@@ -1,5 +1,5 @@
 {
-	"name": "lerna-template",
+	"name": "mawa-projects",
 	"scripts": {
 		"start": "lerna run start --stream",
 		"build": "lerna run build --stream",

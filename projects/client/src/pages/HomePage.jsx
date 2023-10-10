@@ -1,5 +1,9 @@
-import { Center } from "@chakra-ui/react";
+import Navbar from "../components/Navbar";
 
-export default function Homepage() {
-	return <Center>hello</Center>;
+export default function HomePage() {
+	return (
+		<>
+			<div></div>
+		</>
+	);
 }

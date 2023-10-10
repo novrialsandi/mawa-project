@@ -1,20 +1,16 @@
-import "./App.css";
-import { useEffect, useState } from "react";
 import { Routes } from "react-router-dom";
 import routes from "./routes/Routes";
-import Loading from "./components/Loading";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
-	const [isLoading, setIsLoading] = useState(true);
-
-	useEffect(() => {
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 1000);
-	}, [isLoading]);
-
 	return (
-		<>{isLoading ? <Loading /> : <Routes>{routes.map((val) => val)}</Routes>}</>
+		<>
+			<Navbar />
+			<Routes>{routes.map((val) => val)}</Routes>
+			<Footer />
+		</>
 	);
 }
 
