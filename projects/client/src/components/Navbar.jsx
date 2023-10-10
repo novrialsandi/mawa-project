@@ -44,7 +44,7 @@ const Navbar = () => {
 									<Link
 										href={item.href}
 										className={`${styles.link} ${
-											pathname === item.href ? styles.yellowLink : ""
+											pathname === item.to ? styles.yellowLink : ""
 										}`}
 									>
 										{item.label}
