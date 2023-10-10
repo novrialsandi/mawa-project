@@ -24,14 +24,14 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="flex items-center p-4 justify-between ">
-				<a href={"/"} className="flex">
+				<Link to={"/"} className="flex">
 					<img
 						className={`h-12 w-auto ${styles.mawa}`}
 						src={mawa}
 						alt="mawa logo"
 					/>
 					<img className={`h-12 w-auto ${styles.logo}`} src={logo} alt="logo" />
-				</a>
+				</Link>
 				<button className={`${styles.hamburger} `} onClick={toggleMenu}>
 					{isMenuOpen ? "✕" : "☰"}
 				</button>
@@ -42,7 +42,7 @@ const Navbar = () => {
 							{menuItems.map((item, index) => (
 								<li key={index} className={styles.menuItem}>
 									<Link
-										href={item.href}
+										to={item.to}
 										className={`${styles.link} ${
 											pathname === item.to ? styles.yellowLink : ""
 										}`}
