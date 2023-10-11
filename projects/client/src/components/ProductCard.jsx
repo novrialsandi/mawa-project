@@ -22,25 +22,27 @@ const ProductCard = () => {
 						key={index}
 						className="container p-2 relative rounded-xl overflow-hidden"
 					>
-						<div className="card">
+						<div className="card rounded-3xl hover:rounded-3xl">
 							<img
 								src={val.image}
 								alt="product"
-								className="w-full h-full object-cover rounded-3xl"
+								className="w-full h-full object-cover rounded-3xl "
 							/>
-							<div className="intro">
-								<h1 className="font-bold">Jersey</h1>
-								<p>{val.desc}</p>
-								<button>Buy Now</button>
+							<div className="intro flex justify-between">
+								<div>
+									<h1 className="font-bold">Jersey</h1>
+									<p>{val.desc}</p>
+								</div>
+								<button className=" py-1 px-2 rounded-md border-2">
+									Buy Now
+								</button>
 							</div>
 						</div>
 					</div>
 				))}
 			</div>
 			<div className="flex justify-center items-center w-vw">
-				<button className="bg-slate-100 hover:bg-slate-300 text-black font-bold py-1 px-2 rounded">
-					View More
-				</button>
+				<button className=" py-1 px-2 rounded-md border-2">View More</button>
 			</div>
 		</>
 	);

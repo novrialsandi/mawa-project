@@ -23,6 +23,7 @@
 
 .card:hover img {
 	transform: scale(1.1);
+	border-radius: 25px;
 }
 
 .card:hover .intro {
@@ -32,16 +33,19 @@
 .gridContainer {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	border-radius: 25px;
 }
 
 @media (max-width: 1000px) {
 	.gridContainer {
 		grid-template-columns: repeat(3, 1fr);
+		border-radius: 25px;
 	}
 }
 
 @media (max-width: 500px) {
 	.gridContainer {
 		grid-template-columns: repeat(2, 1fr);
+		border-radius: 25px;
 	}
 }
