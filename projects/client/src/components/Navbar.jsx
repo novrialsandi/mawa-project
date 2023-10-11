@@ -15,7 +15,7 @@ const Navbar = () => {
 
 	const menuItems = [
 		{ label: "Home", to: "/" },
-		{ label: "Product", to: "/product" },
+		{ label: "Products", to: "/product" },
 		{ label: "Portfolio", to: "/portfolio" },
 		{ label: "Contact", to: "/contact" },
 		{ label: "About", to: "/about" },
@@ -23,13 +23,14 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="flex items-center p-4 justify-between ">
-				<Link to={"/"} className="flex">
+			<div className="flex items-center p-4  justify-between z-10 fixed top-0 w-full">
+				<Link to={"/"} className="flex gap-4">
 					<img
 						className={`h-12 w-auto ${styles.mawa}`}
 						src={mawa}
 						alt="mawa logo"
 					/>
+
 					<img className={`h-12 w-auto ${styles.logo}`} src={logo} alt="logo" />
 				</Link>
 				<button className={`${styles.hamburger} `} onClick={toggleMenu}>
@@ -73,7 +74,7 @@ const Navbar = () => {
 						}`}
 						to={"/product"}
 					>
-						Product
+						Products
 					</Link>
 					<Link
 						className={`${styles.link} ${

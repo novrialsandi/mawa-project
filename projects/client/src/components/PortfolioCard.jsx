@@ -16,20 +16,22 @@ const ProductCard = () => {
 	];
 
 	return (
-		<div className={style.grid}>
-			{portfolio.map((val, index) => (
-				<div key={index} className="p-2 relative rounded-xl overflow-hidden">
-					<img
-						src={val.image}
-						alt="product"
-						className="w-full h-full object-cover rounded-md"
-					/>
-					<div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-						<span className="text-white font-bold">{val.desc}</span>
+		<>
+			<div className={style.grid}>
+				{portfolio.map((val, index) => (
+					<div key={index} className="p-2 relative rounded-xl overflow-hidden">
+						<img
+							src={val.image}
+							alt="product"
+							className="w-full h-full object-cover rounded-md"
+						/>
+						<div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
+							<span className="text-white font-bold">{val.desc}</span>
+						</div>
 					</div>
-				</div>
-			))}
-		</div>
+				))}
+			</div>
+		</>
 	);
 };
 

@@ -5,8 +5,10 @@ import PageTitle from "../components/PageTitle";
 const PortfolioPage = () => {
 	return (
 		<>
-			<PageTitle />
-			<PortfolioCard />
+			<div className="pt-20">
+				<PageTitle />
+				<PortfolioCard />
+			</div>
 		</>
 	);
 };
